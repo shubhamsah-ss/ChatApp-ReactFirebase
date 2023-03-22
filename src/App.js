@@ -6,6 +6,7 @@ import {
   HStack,
   Input,
   VStack,
+  Image
 } from "@chakra-ui/react";
 import Message from "./components/Message";
 import { app } from "./Firebase";
@@ -131,6 +132,9 @@ function App() {
         </Container>
       ) : (
         <VStack bg="white" justifyContent={"center"} h="100vh">
+          <Image borderRadius='full' boxSize='150px' objectFit='cover'
+          src='https://blog.hubspot.com/hubfs/image8-2.jpg'
+          alt='Google logo'/>
           <Button onClick={loginHandler} colorScheme={"purple"}>
             Sign In With Google
           </Button>
